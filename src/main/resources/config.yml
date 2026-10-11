@@ -1,0 +1,22 @@
+# SwiftHomes settings
+# Maximum number of home permission nodes checked. Assign swifthomes.home.1, .2, .3, etc. in LuckPerms.
+permission-check-limit: 100
+# Players with this permission bypass home limits.
+unlimited-permission: swifthomes.admin
+# Home names are case-insensitive and may contain letters, numbers, _ and -.
+max-name-length: 16
+# GUI titles and messages support legacy color codes (&).
+titles:
+  homes: '&8✦ &b&lSWIFT HOMES &8✦'
+  delete: '&8✦ &c&lREMOVE HOME &8✦'
+  confirm: '&8✦ &c&lCONFIRM DELETE? &8✦'
+messages:
+  no-permission: '&cYou do not have permission to use SwiftHomes.'
+  limit: '&cYou have reached your home limit (&f%limit%&c).'
+  set: '&aHome &f%home% &ahas been set!'
+  deleted: '&aHome &f%home% &ahas been deleted.'
+  missing: '&cYou do not have a home named &f%home%&c.'
+  teleported: '&aTeleported to &f%home%&a.'
+  invalid-name: '&cUse only letters, numbers, underscores and hyphens (max %length%).'
+  reload: '&aSwiftHomes configuration reloaded.'
+  set-prompt: '&eUse &f/sethome <name> &eto create a named home.'

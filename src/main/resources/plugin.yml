@@ -1,0 +1,38 @@
+name: SwiftHomes
+version: 1.0.0
+main: fun.swiftmc.swifthomes.SwiftHomes
+api-version: '1.21'
+author: Swift MC
+website: https://swiftmc.fun
+description: Premium homes GUI with LuckPerms-based home limits.
+commands:
+  home:
+    description: Open homes menu or teleport to a home.
+    usage: /home [name]
+    permission: swifthomes.use
+  homes:
+    description: Open the homes menu.
+    usage: /homes
+    permission: swifthomes.use
+  sethome:
+    description: Set a home at your current location.
+    usage: /sethome [name]
+    permission: swifthomes.use
+  delhome:
+    description: Delete one of your homes.
+    usage: /delhome <name>
+    permission: swifthomes.use
+  swifthomes:
+    description: SwiftHomes administration.
+    usage: /swifthomes reload
+    permission: swifthomes.admin
+permissions:
+  swifthomes.use:
+    description: Allows using SwiftHomes commands and GUI.
+    default: true
+  swifthomes.home.1:
+    description: Allows one home.
+    default: true
+  swifthomes.admin:
+    description: Bypass home limits and administer SwiftHomes.
+    default: op
